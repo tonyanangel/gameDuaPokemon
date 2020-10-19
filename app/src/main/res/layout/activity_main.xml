@@ -1,0 +1,99 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout android:layout_height="match_parent"
+    android:layout_width="match_parent"
+    android:background="@drawable/caro2"
+    xmlns:android="http://schemas.android.com/apk/res/android">
+
+    <CheckBox
+        android:layout_alignParentBottom="true"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/checkbox3"></CheckBox>
+
+    <CheckBox
+       android:layout_marginBottom="20dp"
+        android:id="@+id/checkbox2"
+        android:layout_above="@+id/checkbox3"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"></CheckBox>
+
+
+    <CheckBox
+        android:layout_marginBottom="20dp"
+        android:layout_above="@+id/checkbox2"
+
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/checkbox1"></CheckBox>
+
+       <SeekBar
+           android:progressDrawable="@android:color/transparent"
+
+
+        android:layout_alignParentBottom="true"
+        android:layout_toRightOf="@+id/checkbox3"
+        android:id="@+id/seekBar3"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+           android:thumb="@drawable/pokemon2"
+           ></SeekBar>
+
+
+    <SeekBar
+        android:progressDrawable="@android:color/transparent"
+
+        android:layout_marginBottom="20dp"
+        android:thumb="@drawable/pokemon3"
+        android:id="@+id/seekBar2"
+        android:layout_toRightOf="@+id/checkbox2"
+        android:layout_above="@+id/checkbox3"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"></SeekBar>
+
+    <SeekBar
+        android:progressDrawable="@android:color/transparent"
+
+        android:layout_marginBottom="20dp"
+        android:id="@+id/seekBar1"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_above="@+id/checkbox2"
+        android:layout_toRightOf="@id/checkbox1"
+        android:thumb="@drawable/pokemon1"
+
+
+        >
+
+
+    </SeekBar>
+    <ImageView
+        android:layout_centerHorizontal="true"
+    android:src="@drawable/pokemonview"
+    android:layout_width="1000dp"
+    android:layout_height="150dp">
+
+
+    </ImageView>
+
+    <TextView
+        android:id="@+id/textViewDiemSo"
+        android:layout_margin="10dp"
+        android:textStyle="bold"
+        android:textSize="50sp"
+        android:textColor="#f00"
+        android:text="100"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        ></TextView>
+
+    <ImageButton
+        android:id="@+id/buttonPlay"
+        android:background="@null"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:src="@drawable/play"
+        android:layout_centerInParent="true"
+         ></ImageButton>
+
+
+</RelativeLayout>
